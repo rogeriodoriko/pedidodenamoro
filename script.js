@@ -8,3 +8,12 @@ function moveButton() {
   noButton.style.left = randomX + "px";
   noButton.style.top = randomY + "px";
 }
+let clickCount = 0;
+
+function tristeza() {
+  clickCount++;
+  if (clickCount >= 50) {
+    const tristeza = document.getElementById("tristeza");
+    tristeza.style.display = "block";
+  }
+}
